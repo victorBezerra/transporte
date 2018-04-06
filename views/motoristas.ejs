@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro Motorista</title>
+</head>
+<br/>
+			<h1>Cadastro Motorista</h1>
+			<hr/>
+			<form action="/cadastrarMotorista" method="post">
+				Nome (razão social):<input type="text" name="nome"/><br/>
+				Nome Fantasia:<input type="text" name="descricao"/><br/>
+				CPF/CNPJ:<input type="text" name="cpf" size=11 maxlength=11/><br/>
+				Inscrição Estadual:<input type="text" name="inscricao"/><br/>
+				Representante:<input type="text" name="representante"/><br/>
+				Endereço:<input type="text" name="endereco"/><br/>
+				Bairro:<input type="text" name="bairro"/><br/>
+				Cidade:<input type="text" name="cidade"/><br/>
+				Estado:<input type="text" name="estado"/><br/>
+				CEP:<input type="text" name="cep"/><br/>
+				Email:<input type="text" name="email"/><br/>
+				Site:<input type="text" name="site"/><br/>
+				Telefone:<input type="text" name="telefone"/><br/>
+				NIT ou PIS/PASEP:<input type="text" name="nit"/><br/>
+				Tipo: <SELECT name="tipo">
+						<option>Pessoa Física
+						<option>Pessoa Jurídica
+						<option>Unidade Gestora
+						<option>Estrangeiro
+						</SELECT>
+				<button type="submit" class="btn btn-primary" >Proximo</button>
+			</form>
+		</body>
+</html>

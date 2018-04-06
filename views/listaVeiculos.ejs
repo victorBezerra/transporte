@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lista Veículos</title>
+  </head>
+  <body>
+    <table border="1" cellspacing="0" width="40%">
+      <tbody>
+        <tr>
+          <td>Marca</td>
+          <td>Tipo</td>
+          <td>Carroceria</td>
+          <td>Especie</td>
+          <td>Especie Ativo</td>
+          <td>Genero</td>
+          <td>Modelo</td>
+          <td>Modelo Ativo</td>
+          <td>Combustível</td>
+          <td>Status</td>
+          <td>Propriedade</td>
+          <td>Cor</td>
+          <td>Placa</td>
+          <td>Veiculo Descrição</td>
+          <td>Capacidade Máxima</td>
+          <td>Ano modelo </td>
+          <td>Ano Fabricação</td>
+        </tr>
+				<% print.forEach(function (veiculo) { %>
+					<tr>
+						<td><%= veiculo.marca_descricao%></td>
+						<td><%= veiculo.tipo_descricao%></td>
+						<td><%= veiculo.carroceria_descricao%></td>
+            <td><%= veiculo.especie_descricao%></td>
+            <td><%= veiculo.especie_ativo%></td>
+            <td><%= veiculo.genero_descricao%></td>
+            <td><%= veiculo.modelo_descricao%></td>
+            <td><%= veiculo.modelo_ativo%></td>
+            <td><%= veiculo.combustivel_descricao%></td>
+            <td><%= veiculo.status_descricao%></td>
+            <td><%= veiculo.propriedade_descricao%></td>
+            <td><%= veiculo.cor_descricao%></td>
+            <td><%= veiculo.placa%></td>
+            <td><%= veiculo.descricao%></td>
+            <td><%= veiculo.qtd_max_pass%></td>
+            <td><%= veiculo.ano_modelo%></td>
+            <td><%= veiculo.ano_fabricacao%></td>
+            <td><a class="btn btn-primary" >Editar</a></td>
+            <td><a class="btn btn-primary" href="/apagarVeiculo/<%=veiculo.id%>">Apagar</a></td>
+					</tr>
+				<% }) %>
+			</tbody>
+    </table>
+  </body>
+</html>

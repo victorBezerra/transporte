@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lista de Motorista</title>
+  </head>
+  <body>
+    <table border="1" cellspacing="0" width="40%">
+      <tbody>
+        <tr>
+          <td>Nome</td>
+          <td>Nome Fantasia</td>
+          <td>CPF/CNPJ</td>
+          <td>Inscrição Estadual</td>
+          <td>Representante</td>
+          <td>Endereço</td>
+          <td>Bairro</td>
+          <td>Cidade</td>
+          <td>Estado</td>
+          <td>CEP</td>
+          <td>Email</td>
+          <td>Site</td>
+          <td>Telefone</td>
+          <td>NIT</td>
+          <td>Tipo</td>
+        </tr>
+				  <% print.forEach(function (motorista) { %>
+					<tr>
+						<td><%=motorista.nome %></td>
+						<td><%=motorista.nomeFantasia%></td>
+						<td><%=motorista.cpf %></td>
+            <td><%=motorista.insEstadual%></td>
+            <td><%=motorista.representante%></td>
+            <td><%=motorista.endereco%></td>
+            <td><%=motorista.bairro%></td>
+            <td><%=motorista.cidade%></td>
+            <td><%=motorista.estado%></td>
+            <td><%=motorista.cep%></td>
+            <td><%=motorista.email%></td>
+            <td><%=motorista.site%></td>
+            <td><%=motorista.telefone%></td>
+            <td><%=motorista.nit%></td>
+            <td><%=motorista.tipo%></td>
+            <td><a class="btn btn-primary" href="/">Editar</a></td>
+            <td><a class="btn btn-primary" href="/apagarMotorista/<%=motorista.nome%>" >Apagar</a></td>
+					</tr>
+				<% }) %>
+			</tbody>
+    </table>
+  </body>
+</html>
